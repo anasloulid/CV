@@ -2,27 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Anas Loulid | Embedded Systems Engineer</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
 
   <!-- Top Banner -->
   <div class="top-banner">
     Seeking an end-of-year internship in embedded systems.
-    <div class="top-icons">
-      <a href="mailto:anasloulid.educ@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-      <a href="https://github.com/anasloulid" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/anasloulid" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
   </div>
 
-  <!-- Main Layout -->
+  <!-- Contact Icons -->
+  <div class="top-contact">
+    <a href="mailto:anasloulid.educ@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/anasloulid" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/anasloulid" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+
+  <!-- Layout -->
   <div class="container">
-    <aside>
+    <!-- Sidebar -->
+    <aside data-aos="fade-right">
       <img src="assets/profile.jpeg" alt="Anas Loulid" class="profile-pic" />
       <h1>Anas Loulid</h1>
       <p>Embedded Systems Engineer Student</p>
@@ -35,26 +38,39 @@
       </nav>
     </aside>
 
+    <!-- Main -->
     <main>
       <section id="about" data-aos="fade-up">
         <h2>About Me</h2>
-        <p>I am a passionate embedded systems engineer student at ENSA Marrakech, with a strong foundation in microcontroller programming, real-time systems, and signal processing. My academic journey and hands-on projects have allowed me to bridge theory with practice. I'm now seeking an opportunity to contribute my skills to real-world applications, learn from industry experts, and be part of innovative embedded solutions.</p>
+        <p>
+          I'm a passionate embedded systems engineering student at ENSA Marrakech, driven by curiosity and innovation.
+          My academic journey and hands-on projects reflect a dedication to real-world challenges and tech solutions.
+        </p>
       </section>
 
       <section id="projects" data-aos="fade-up">
         <h2>Projects</h2>
         <ul>
-          <li><strong>ADAS with STM32:</strong> Real-time obstacle detection system for vehicle safety.
-            <br>- Implemented ultrasonic sensors to detect proximity
-            <br>- Integrated feedback system with LEDs and buzzer for alerts
+          <li>
+            <strong><a href="https://github.com/anasloulid/FOTA_Project.git" target="_blank">FOTA for STM32</a>:</strong>
+            <ul>
+              <li>Designed a remote firmware update system using ESP32 & STM32.</li>
+              <li>Handled UART communication and Firebase integration via Node-RED.</li>
+            </ul>
           </li>
-          <li><strong>Virtual Artist AI:</strong> Hand gesture recognition using image processing.
-            <br>- Developed gesture tracking algorithm using OpenCV
-            <br>- Enabled drawing with finger position in real-time canvas
+          <li>
+            <strong>ADAS with STM32:</strong>
+            <ul>
+              <li>Developed real-time obstacle detection system for vehicle safety.</li>
+              <li>Integrated ultrasonic sensors and LED warnings with STM32CubeIDE.</li>
+            </ul>
           </li>
-          <li><strong><a href="https://github.com/anasloulid/FOTA_Project.git" target="_blank">FOTA for STM32:</a></strong> Remote firmware updates using ESP32.
-            <br>- ESP8266 used for wireless transmission
-            <br>- Bootloader-based application update system
+          <li>
+            <strong>Virtual Artist AI:</strong>
+            <ul>
+              <li>Implemented hand gesture recognition using OpenCV.</li>
+              <li>Created virtual painting using finger tracking.</li>
+            </ul>
           </li>
         </ul>
       </section>
@@ -66,7 +82,6 @@
           <li><strong>Boards:</strong> STM32, Arduino, ESP32, FPGA</li>
           <li><strong>Tools:</strong> STM32CubeIDE, Simulink, GitHub</li>
           <li><strong>Protocols:</strong> UART, I2C, SPI, CAN</li>
-          <li><strong>Soft Skills:</strong> Curiosity, Time Management</li>
         </ul>
       </section>
 
@@ -81,21 +96,16 @@
 
       <section id="experience" data-aos="fade-up">
         <h2>Experience</h2>
-        <p><strong>Observation internship at OCP Group (1 month):</strong>
-        <br>- Gained insights into industrial automation and instrumentation
-        <br>- Explored SCADA systems and PLCs used in phosphate processing
-        <br>- Worked under supervision in electrical and control departments</p>
+        <p>
+          Completed an observation internship at OCP Group (1 month), where I learned about the integration of embedded technologies in industrial automation systems and safety protocols used in large-scale operations.
+        </p>
       </section>
     </main>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({
-      duration: 800,
-      easing: 'ease-in-out',
-      once: true,
-    });
+    AOS.init();
   </script>
 </body>
 </html>
