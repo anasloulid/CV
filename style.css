@@ -1,44 +1,50 @@
+/* Reset and Base Styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #f9fbfd, #dbeeff);
+  background: linear-gradient(to bottom right, #eef2f7, #ffffff);
   color: #333;
 }
 
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Banner */
 .top-banner {
   background-color: #007acc;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 0.7rem;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.95rem;
   margin-top: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  animation: fadeInDown 1s ease-out;
+  border-radius: 8px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+/* Layout */
 .container {
   display: flex;
+  flex-direction: row;
   min-height: 100vh;
 }
 
+/* Sidebar */
 aside {
   width: 250px;
-  background: linear-gradient(to bottom, #f0f4f8, #e2ecf3);
+  background-color: #f0f4f8;
   padding: 2rem 1rem;
   text-align: center;
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+  border-right: 2px solid #dbe2ea;
 }
 
 .profile-pic {
@@ -47,48 +53,59 @@ aside {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
-  box-shadow: 0 0 8px rgba(0, 122, 204, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.profile-pic:hover {
-  transform: scale(1.05);
 }
 
 aside h1 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
 }
 
 aside p {
   font-style: italic;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
+  font-size: 0.95rem;
+}
+
+/* Nav Styling */
+aside nav {
+  border-top: 2px solid #ccc;
+  padding-top: 1rem;
+  margin-top: 1rem;
 }
 
 aside nav a {
   display: block;
   margin: 0.5rem 0;
   color: #007acc;
-  text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s;
+  padding: 0.4rem;
+  border: 1px solid transparent;
+  border-radius: 6px;
 }
 
 aside nav a:hover {
-  color: #005a99;
-  text-decoration: underline;
+  background-color: #e2effa;
+  border-color: #007acc;
 }
 
+/* Main Content */
 main {
   flex: 1;
   padding: 2rem;
-  animation: fadeIn 0.7s ease-in;
+}
+
+main section {
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
 }
 
 main h2 {
   border-bottom: 2px solid #007acc;
   padding-bottom: 0.3rem;
-  margin-top: 2rem;
+  margin-top: 0;
 }
 
 main ul {
@@ -96,24 +113,46 @@ main ul {
   margin-top: 0.5rem;
 }
 
-a {
-  color: #007acc;
-  text-decoration: none;
-  transition: color 0.2s ease;
+main li {
+  margin-bottom: 0.8rem;
 }
 
-a:hover {
-  color: #005a99;
-  text-decoration: underline;
+/* Contact Section */
+#contact a.icon-link {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  margin: 0.4rem;
+  border-radius: 50%;
+  background-color: #007acc;
+  color: white;
+  text-align: center;
+  line-height: 42px;
+  font-size: 20px;
+  transition: background-color 0.3s;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
+#contact a.icon-link:hover {
+  background-color: #005f99;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  aside {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #dbe2ea;
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+
+  .top-banner {
+    font-size: 0.85rem;
   }
 }
