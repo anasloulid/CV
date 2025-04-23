@@ -1,50 +1,119 @@
-/* Fade in effect on load */
 body {
-  opacity: 0;
-  transition: opacity 1s ease-in;
-}
-body.loaded {
-  opacity: 1;
-}
-
-/* Smooth scroll reveal for sections */
-main section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.6s ease-out;
-}
-main section.visible {
-  opacity: 1;
-  transform: translateY(0);
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #f9fbfd, #dbeeff);
+  color: #333;
 }
 
-/* Project & skill hover effects */
-main ul li {
-  transition: transform 0.3s ease, background 0.3s;
-  padding: 0.2rem 0;
-}
-main ul li:hover {
-  transform: scale(1.02);
-  background-color: rgba(52, 152, 219, 0.08);
-  border-radius: 4px;
-}
-
-/* Nav link glowing hover effect */
-aside nav a:hover {
-  text-decoration: none;
-  color: #fff;
-  background-color: #3498db;
-  border-radius: 4px;
-  padding: 0.2rem 0.4rem;
-  box-shadow: 0 0 8px rgba(52, 152, 219, 0.6);
-  transition: all 0.3s ease-in-out;
+.top-banner {
+  background-color: #007acc;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInDown 1s ease-out;
 }
 
-/* Profile picture animation on hover */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+aside {
+  width: 250px;
+  background: linear-gradient(to bottom, #f0f4f8, #e2ecf3);
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+}
+
 .profile-pic {
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 8px rgba(0, 122, 204, 0.2);
+  transition: transform 0.3s ease;
 }
+
 .profile-pic:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+}
+
+aside h1 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+aside p {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+aside nav a {
+  display: block;
+  margin: 0.5rem 0;
+  color: #007acc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+aside nav a:hover {
+  color: #005a99;
+  text-decoration: underline;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  animation: fadeIn 0.7s ease-in;
+}
+
+main h2 {
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+}
+
+main ul {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+a {
+  color: #007acc;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #005a99;
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
