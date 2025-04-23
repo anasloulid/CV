@@ -2,29 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anas Loulid | Embedded Systems Engineer</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- Banner Section -->
+  <!-- Top Banner -->
   <div class="top-banner">
     Seeking an end-of-year internship in embedded systems.
-  </div>
-
-  <!-- Contact Icons Section (just below the top-banner) -->
-  <div class="contact-icons-container">
-    <a href="mailto:anasloulid.educ@gmail.com" target="_blank" class="contact-icon"><i class="fas fa-envelope"></i></a>
-    <a href="https://github.com/anasloulid" target="_blank" class="contact-icon"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/anas-loulid/" target="_blank" class="contact-icon"><i class="fab fa-linkedin"></i></a>
+    <div class="top-icons">
+      <a href="mailto:anasloulid.educ@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/anasloulid" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/anasloulid" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
   </div>
 
   <!-- Main Layout -->
   <div class="container">
-    
-    <!-- Sidebar -->
     <aside>
       <img src="assets/profile.jpeg" alt="Anas Loulid" class="profile-pic" />
       <h1>Anas Loulid</h1>
@@ -35,27 +32,34 @@
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
         <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
       </nav>
     </aside>
 
-    <!-- Main Content -->
     <main>
-      <section id="about">
+      <section id="about" data-aos="fade-up">
         <h2>About Me</h2>
-        <p>I am a future engineer in Electronics and Embedded Systems at ENSA Marrakech. I am looking for a graduation internship to apply my knowledge and take on real-world challenges. Throughout my studies, I have developed a strong foundation in embedded systems, C programming, and hardware interfacing. My goal is to apply this knowledge to build innovative and practical solutions. I am passionate about working on real-time systems and contributing to the development of cutting-edge technologies.</p>
+        <p>I am a passionate embedded systems engineer student at ENSA Marrakech, with a strong foundation in microcontroller programming, real-time systems, and signal processing. My academic journey and hands-on projects have allowed me to bridge theory with practice. I'm now seeking an opportunity to contribute my skills to real-world applications, learn from industry experts, and be part of innovative embedded solutions.</p>
       </section>
 
-      <section id="projects">
+      <section id="projects" data-aos="fade-up">
         <h2>Projects</h2>
         <ul>
-          <li><strong><a href="https://github.com/anasloulid/FOTA_Project.git" target="_blank">ADAS with STM32:</a></strong> Real-time obstacle detection system for vehicle safety. This project involved designing algorithms to detect obstacles and integrating them into a real-time embedded system for vehicle safety applications.</li>
-          <li><strong>Virtual Artist AI:</strong> Hand gesture recognition using image processing. The goal was to implement a system that recognizes hand gestures and translates them into digital art through AI.</li>
-          <li><strong>FOTA for STM32:</strong> Remote firmware updates using ESP32. This project focused on building a system to perform over-the-air firmware updates on STM32 microcontrollers using an ESP32 module for seamless remote updates.</li>
+          <li><strong>ADAS with STM32:</strong> Real-time obstacle detection system for vehicle safety.
+            <br>- Implemented ultrasonic sensors to detect proximity
+            <br>- Integrated feedback system with LEDs and buzzer for alerts
+          </li>
+          <li><strong>Virtual Artist AI:</strong> Hand gesture recognition using image processing.
+            <br>- Developed gesture tracking algorithm using OpenCV
+            <br>- Enabled drawing with finger position in real-time canvas
+          </li>
+          <li><strong><a href="https://github.com/anasloulid/FOTA_Project.git" target="_blank">FOTA for STM32:</a></strong> Remote firmware updates using ESP32.
+            <br>- ESP8266 used for wireless transmission
+            <br>- Bootloader-based application update system
+          </li>
         </ul>
       </section>
 
-      <section id="skills">
+      <section id="skills" data-aos="fade-up">
         <h2>Skills</h2>
         <ul>
           <li><strong>Languages:</strong> C, C++, Assembly</li>
@@ -66,7 +70,7 @@
         </ul>
       </section>
 
-      <section id="education">
+      <section id="education" data-aos="fade-up">
         <h2>Education</h2>
         <ul>
           <li><strong>2022–2026:</strong> Engineering Degree, ENSA Marrakech</li>
@@ -75,17 +79,23 @@
         </ul>
       </section>
 
-      <section id="experience">
+      <section id="experience" data-aos="fade-up">
         <h2>Experience</h2>
-        <p><strong>OCP Group - Observation Internship (1 month):</strong> During my time at OCP Group, I had the opportunity to work on a variety of industrial control systems. I observed the implementation of embedded systems in real-world applications and gained hands-on experience in the field of automation and monitoring. This internship helped me understand how embedded systems are used in industrial settings and the importance of real-time processing in controlling complex systems.</p>
-      </section>
-
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>If you are interested in connecting or have any questions, feel free to reach out to me via the contact icons above.</p>
+        <p><strong>Observation internship at OCP Group (1 month):</strong>
+        <br>- Gained insights into industrial automation and instrumentation
+        <br>- Explored SCADA systems and PLCs used in phosphate processing
+        <br>- Worked under supervision in electrical and control departments</p>
       </section>
     </main>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  </script>
 </body>
 </html>
