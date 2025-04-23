@@ -15,13 +15,13 @@
 
   <!-- Main Layout -->
   <div class="container">
-    
+
     <!-- Sidebar -->
     <aside>
       <img src="assets/profile.jpeg" alt="Anas Loulid" class="profile-pic" />
       <h1>Anas Loulid</h1>
       <p>Embedded Systems Engineer Student</p>
-      <nav>
+      <nav class="nav-box">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
@@ -29,6 +29,11 @@
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
+      <div class="contact-icons">
+        <a href="mailto:anasloulid.educ@gmail.com" class="icon-circle">📧</a>
+        <a href="https://github.com/anasloulid" class="icon-circle" target="_blank">💻</a>
+        <a href="https://linkedin.com/in/anasloulid" class="icon-circle" target="_blank">🔗</a>
+      </div>
     </aside>
 
     <!-- Main Content -->
@@ -48,14 +53,26 @@
       <section id="projects">
         <h2>Projects</h2>
         <ul>
-          <li><strong>ADAS with STM32:</strong> Real-time obstacle detection system for vehicle safety.</li>
-          <li><strong>Virtual Artist AI:</strong> Hand gesture recognition using image processing.</li>
           <li>
-            <strong>
-              <a href="https://github.com/anasloulid/FOTA_Project.git" target="_blank">
-                FOTA for STM32
-              </a>
-            </strong>: Remote firmware updates using ESP32.
+            <strong>ADAS with STM32:</strong>
+            <ul>
+              <li>Developed an advanced driver assistance system using ultrasonic sensors and STM32.</li>
+              <li>Implemented real-time obstacle detection and alert logic for enhanced vehicle safety.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Virtual Artist AI:</strong>
+            <ul>
+              <li>Used image processing to detect and classify hand gestures using a webcam.</li>
+              <li>Controlled a virtual canvas allowing dynamic drawing with recognized gestures.</li>
+            </ul>
+          </li>
+          <li>
+            <strong><a href="https://github.com/anasloulid/FOTA_Project.git" target="_blank">FOTA for STM32</a>:</strong>
+            <ul>
+              <li>Designed a remote firmware update system over WiFi using ESP32 and STM32.</li>
+              <li>Implemented UART communication and bootloader switching logic for secure updates.</li>
+            </ul>
           </li>
         </ul>
       </section>
