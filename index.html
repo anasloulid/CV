@@ -11,20 +11,15 @@
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to bottom right, #ffffff, #f3f7fa);
       color: #333;
-      opacity: 0;
-      transition: opacity 1s ease-in;
-    }
-
-    body.loaded {
-      opacity: 1;
     }
 
     .top-banner {
+      background-color: transparent;
       color: #007acc;
       text-align: center;
       margin-top: 1rem;
       font-weight: bold;
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
 
     .container {
@@ -46,12 +41,6 @@
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 1rem;
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
-    }
-
-    .profile-pic:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
     }
 
     aside h1 {
@@ -70,16 +59,10 @@
       color: #007acc;
       text-decoration: none;
       font-weight: 500;
-      transition: all 0.3s ease;
     }
 
     aside nav a:hover {
-      text-decoration: none;
-      color: #fff;
-      background-color: #3498db;
-      border-radius: 4px;
-      padding: 0.2rem 0.4rem;
-      box-shadow: 0 0 8px rgba(52, 152, 219, 0.6);
+      text-decoration: underline;
     }
 
     main {
@@ -98,17 +81,6 @@
       margin-top: 0.5rem;
     }
 
-    main ul li {
-      transition: transform 0.3s ease, background 0.3s;
-      padding: 0.2rem 0;
-    }
-
-    main ul li:hover {
-      transform: scale(1.02);
-      background-color: rgba(52, 152, 219, 0.08);
-      border-radius: 4px;
-    }
-
     a {
       color: #007acc;
       text-decoration: none;
@@ -117,22 +89,11 @@
     a:hover {
       text-decoration: underline;
     }
-
-    main section {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.6s ease-out;
-    }
-
-    main section.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
   </style>
 </head>
 <body>
 
-  <!-- Banner Section -->
+  <!-- Top Banner -->
   <div class="top-banner">
     Seeking an end-of-year internship in embedded systems.
   </div>
@@ -159,7 +120,17 @@
     <main>
       <section id="about">
         <h2>About Me</h2>
-        <p>I am a future engineer in Electronics and Embedded Systems at ENSA Marrakech. I am looking for a graduation internship to apply my knowledge and take on real-world challenges.</p>
+        <p>
+          I am a final-year engineering student specializing in Electronics and Embedded Systems at ENSA Marrakech.
+          Passionate about innovation, I thrive on building smart, efficient, and real-time embedded solutions.
+          My academic background, combined with hands-on project experience in microcontrollers, communication protocols,
+          and IoT systems, has shaped me into a proactive and solution-oriented engineer.
+        </p>
+        <p>
+          I am currently seeking a graduation internship where I can contribute my skills, collaborate with professionals,
+          and deepen my knowledge in real-world embedded applications. I bring with me a strong work ethic, curiosity,
+          and a deep desire to continuously learn and grow within the dynamic field of embedded systems.
+        </p>
       </section>
 
       <section id="projects">
@@ -204,24 +175,5 @@
     </main>
   </div>
 
-  <!-- Script for fade-in and scroll animation -->
-  <script>
-    window.addEventListener('load', () => {
-      document.body.classList.add('loaded');
-    });
-
-    const sections = document.querySelectorAll('main section');
-    const revealOnScroll = () => {
-      sections.forEach(sec => {
-        const top = sec.getBoundingClientRect().top;
-        if (top < window.innerHeight - 100) {
-          sec.classList.add('visible');
-        }
-      });
-    };
-
-    window.addEventListener('scroll', revealOnScroll);
-    revealOnScroll();
-  </script>
 </body>
 </html>
