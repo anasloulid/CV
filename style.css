@@ -1,17 +1,24 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #ffffff, #f3f7fa);
-  color: #333;
+  background: linear-gradient(to bottom right, #e6f0f8, #ffffff);
+  color: #2c3e50;
 }
 
 .top-banner {
-  background-color: #007acc;
+  background-color: #3498db;
   color: white;
   text-align: center;
-  padding: 1rem;
-  font-weight: bold;
+  padding: 0.7rem;
+  font-weight: 600;
   font-size: 1rem;
+  margin-top: 1.2rem; /* lowered a bit */
+  border: none; /* removes any border or frame effect */
+  border-radius: 6px; /* smooth rounded look */
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .container {
@@ -20,11 +27,12 @@ body {
 }
 
 aside {
-  width: 250px;
-  background-color: #f0f4f8;
+  width: 260px;
+  background: #fdfefe;
   padding: 2rem 1rem;
   text-align: center;
-  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.04);
+  border-right: 1px solid #dce1e7;
 }
 
 .profile-pic {
@@ -33,51 +41,35 @@ aside {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
+  border: 3px solid #3498db;
 }
 
 aside h1 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  color: #2c3e50;
 }
 
 aside p {
   font-style: italic;
+  color: #7f8c8d;
   margin-bottom: 1.5rem;
 }
 
 aside nav a {
   display: block;
   margin: 0.5rem 0;
-  color: #007acc;
+  color: #3498db;
   text-decoration: none;
   font-weight: 500;
 }
 
 aside nav a:hover {
   text-decoration: underline;
+  color: #21618c;
 }
 
 main {
   flex: 1;
   padding: 2rem;
-}
-
-main h2 {
-  border-bottom: 2px solid #007acc;
-  padding-bottom: 0.3rem;
-  margin-top: 2rem;
-}
-
-main ul {
-  padding-left: 1.5rem;
-  margin-top: 0.5rem;
-}
-
-a {
-  color: #007acc;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
+  background-color: #
