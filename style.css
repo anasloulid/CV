@@ -14,6 +14,27 @@ body {
   font-size: 1rem;
 }
 
+.contact-icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px; /* Moves icons a little lower */
+}
+
+.contact-icon {
+  font-size: 2rem;
+  color: #007acc;
+  transition: color 0.3s ease;
+}
+
+.contact-icon:hover {
+  color: #005f87;
+}
+
+.contact-icon:active {
+  color: #003f5f;
+}
+
 .container {
   display: flex;
   min-height: 100vh;
@@ -51,10 +72,11 @@ aside nav a {
   color: #007acc;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.3s;
 }
 
 aside nav a:hover {
-  text-decoration: underline;
+  color: #005f87;
 }
 
 main {
@@ -82,23 +104,16 @@ a:hover {
   text-decoration: underline;
 }
 
-.contact-icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
+nav {
+  border-top: 1px solid #007acc;
+  margin-top: 2rem;
 }
 
-.contact-icon {
-  font-size: 2rem;
-  color: #007acc;
-  transition: color 0.3s ease;
+nav a {
+  font-size: 1rem;
+  padding: 0.5rem 0;
 }
 
-.contact-icon:hover {
+nav a:hover {
   color: #005f87;
-}
-
-.contact-icon:active {
-  color: #003f5f;
 }
