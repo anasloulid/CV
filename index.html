@@ -5,6 +5,130 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Anas Loulid | Embedded Systems Engineer</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffffff, #f3f7fa);
+      color: #333;
+      opacity: 0;
+      transition: opacity 1s ease-in;
+    }
+
+    body.loaded {
+      opacity: 1;
+    }
+
+    .top-banner {
+      color: #007acc;
+      text-align: center;
+      margin-top: 1rem;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    aside {
+      width: 250px;
+      background-color: #f0f4f8;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .profile-pic:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+    }
+
+    aside h1 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    aside p {
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+
+    aside nav a {
+      display: block;
+      margin: 0.5rem 0;
+      color: #007acc;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    aside nav a:hover {
+      text-decoration: none;
+      color: #fff;
+      background-color: #3498db;
+      border-radius: 4px;
+      padding: 0.2rem 0.4rem;
+      box-shadow: 0 0 8px rgba(52, 152, 219, 0.6);
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem;
+    }
+
+    main h2 {
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 0.3rem;
+      margin-top: 2rem;
+    }
+
+    main ul {
+      padding-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    main ul li {
+      transition: transform 0.3s ease, background 0.3s;
+      padding: 0.2rem 0;
+    }
+
+    main ul li:hover {
+      transform: scale(1.02);
+      background-color: rgba(52, 152, 219, 0.08);
+      border-radius: 4px;
+    }
+
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    main section {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+
+    main section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 <body>
 
@@ -80,5 +204,24 @@
     </main>
   </div>
 
+  <!-- Script for fade-in and scroll animation -->
+  <script>
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+
+    const sections = document.querySelectorAll('main section');
+    const revealOnScroll = () => {
+      sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+          sec.classList.add('visible');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+  </script>
 </body>
 </html>
