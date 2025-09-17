@@ -108,7 +108,7 @@ main h2 {
   padding-bottom: 0.5rem;
 }
 
-/* Projects Section */
+/* Lists */
 #projects ul, #experience ul, #education ul, #skills ul {
   list-style-type: disc;
   padding-left: 1.2rem;
