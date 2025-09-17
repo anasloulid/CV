@@ -1,120 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Anas Loulid | Embedded Systems Engineer</title>
+  <title>Anas Loulid | Stage PFE Systèmes Embarqués</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- Top Banner -->
-  <div class="top-banner">
-    Seeking an end-of-year internship in embedded systems.
-  </div>
-
-  <!-- Contact Icons -->
-  <div class="top-contact">
-    <a href="mailto:anasloulid.educ@gmail.com"><i class="fas fa-envelope"></i></a>
-    <a href="https://github.com/anasloulid" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://linkedin.com/in/anasloulid" target="_blank"><i class="fab fa-linkedin"></i></a>
-  </div>
-
-  <!-- Layout -->
+  <!-- Conteneur principal -->
   <div class="container">
     <!-- Sidebar -->
     <aside data-aos="fade-right">
       <img src="assets/profile.jpeg" alt="Anas Loulid" class="profile-pic" />
       <h1>Anas Loulid</h1>
-      <p>Embedded Systems Engineer Student</p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-      </nav>
+      <p class="subtitle">Étudiant en dernière année en Systèmes Embarqués</p>
+
+      <div class="contact">
+        <p><i class="fas fa-envelope"></i> anasloulid.educ@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +212 7670-62924</p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/anasloulid" target="_blank">LinkedIn</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/anasloulid" target="_blank">GitHub</a></p>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Soft-Skills</h3>
+        <ul>
+          <li>Gestion du temps et des priorités</li>
+          <li>Analyse de données, débogage</li>
+          <li>Curiosité et apprentissage continu</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Langues</h3>
+        <ul>
+          <li>Arabe : Maternelle</li>
+          <li>Français : Intermédiaire</li>
+          <li>Anglais : Intermédiaire</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Parascolaire</h3>
+        <ul>
+          <li>Expérience dans le commerce familial</li>
+          <li>Membre du club GE Robotique</li>
+          <li>Participation à des projets techniques</li>
+        </ul>
+      </div>
     </aside>
 
-    <!-- Main -->
+    <!-- Main content -->
     <main>
+      <div class="top-banner">
+        À la recherche d’un stage PFE en systèmes embarqués
+      </div>
+
       <section id="about" data-aos="fade-up">
-        <h2>About Me</h2>
-        <p>
-          I'm a passionate embedded systems engineering student at ENSA Marrakech, driven by curiosity and innovation.
-          My academic journey and hands-on projects reflect a dedication to real-world challenges and tech solutions.
+        <p class="intro">
+          Je suis un futur ingénieur en électronique et systèmes embarqués à l’ENSA Marrakech.
+          Je cherche une opportunité de stage de fin d’études (PFE) pour appliquer mes connaissances et relever de nouveaux défis.
         </p>
       </section>
 
-      <section id="projects" data-aos="fade-up">
-        <h2>Projects</h2>
+      <section id="experience" data-aos="fade-up">
+        <h2>Expérience Professionnelle</h2>
         <ul>
           <li>
-            <strong><a href="https://github.com/anasloulid/FOTA_Project.git" target="_blank">FOTA for STM32</a>:</strong>
-            <ul>
-              <li>Designed a remote firmware update system using ESP32 & STM32.</li>
-              <li>Handled UART communication and Firebase integration via Node-RED.</li>
-            </ul>
+            <strong>Stagiaire en Calibration Engineering</strong> – FEV North Africa<br/>
+            Août 2025 - Présent · Casablanca · Développement d’une interface de suivi en temps réel des cycles RDE.
           </li>
           <li>
-            <strong><a href="https://github.com/anasloulid/UVM_ALU_Verification.git" target="_blank">UVM ALU Verification</a>:</strong>
-            <ul>
-              <li>Implemented a UVM-based verification environment for an Arithmetic Logic Unit (ALU).</li>
-              <li>Designed sequences, drivers, monitors, and scoreboards for automated functional verification.</li>
-            </ul>
+            <strong>Stage d'observation</strong> – OCP Group<br/>
+            2023 · Observation de l’intégration des systèmes embarqués dans l’automatisation industrielle.
+          </li>
+        </ul>
+      </section>
+
+      <section id="formation" data-aos="fade-up">
+        <h2>Formation</h2>
+        <ul>
+          <li><strong>2022–2026 :</strong> Ingénierie en systèmes embarqués – ENSA Marrakech</li>
+          <li><strong>2020–2022 :</strong> Classes préparatoires intégrées – ENSA Marrakech</li>
+          <li><strong>2019–2020 :</strong> Bac Sciences Mathématiques A – Lycée Sidi Bennour</li>
+        </ul>
+      </section>
+
+      <section id="projects" data-aos="fade-up">
+        <h2>Projets Académiques</h2>
+        <ul>
+          <li>
+            <strong><a href="https://github.com/anasloulid/FOTA_Project.git" target="_blank">FOTA pour STM32</a></strong>
+            – Système de mise à jour OTA du firmware avec ESP32 & STM32, communication UART & intégration Firebase.
           </li>
           <li>
-            <strong>Démarrage intelligent d’un moteur par la détection du casque:</strong>
-            <ul>
-              <li>Developed a smart motorcycle start system using STM32 and ESP32.</li>
-              <li>Integrated helmet detection to ensure safety before engine start.</li>
-            </ul>
+            <strong><a href="https://github.com/anasloulid/UVM_ALU_Verification.git" target="_blank">Vérification UVM d'une ALU</a></strong>
+            – Création de séquences, drivers, moniteurs et scoreboards pour automatiser la vérification.
           </li>
           <li>
-            <strong>Virtual Artist AI:</strong>
-            <ul>
-              <li>Implemented hand gesture recognition using OpenCV.</li>
-              <li>Created virtual painting using finger tracking.</li>
-            </ul>
+            <strong>Démarrage intelligent d’une moto par détection du casque</strong>
+            – Démarrage sécurisé avec STM32 & ESP32, intégration capteur pour vérifier le port du casque.
+          </li>
+          <li>
+            <strong>Virtual Artist AI</strong>
+            – Reconnaissance de gestes et dessin virtuel en temps réel avec OpenCV.
           </li>
         </ul>
       </section>
 
       <section id="skills" data-aos="fade-up">
-        <h2>Skills</h2>
+        <h2>Compétences Techniques</h2>
         <ul>
-          <li><strong>Languages:</strong> C, C++, Assembly</li>
-          <li><strong>Boards:</strong> STM32, Arduino, ESP32, FPGA</li>
-          <li><strong>Tools:</strong> STM32CubeIDE, Simulink, GitHub</li>
-          <li><strong>Protocols:</strong> UART, I2C, SPI, CAN</li>
-        </ul>
-      </section>
-
-      <section id="education" data-aos="fade-up">
-        <h2>Education</h2>
-        <ul>
-          <li><strong>2022–2026:</strong> Engineering Degree, ENSA Marrakech</li>
-          <li><strong>2020–2022:</strong> Preparatory Program, ENSA Marrakech</li>
-          <li><strong>2019–2020:</strong> Baccalaureate in Mathematics Science A</li>
-        </ul>
-      </section>
-
-      <section id="experience" data-aos="fade-up">
-        <h2>Experience</h2>
-        <ul>
-          <li>
-            <strong>Stagiaire en Calibration Engineering</strong><br/>
-            FEV North Africa · Internship<br/>
-            Aug 2025 - Present · 2 mos · Casablanca-Settat, Morocco · On-site<br/>
-            Développement d’une interface utilisateur pour le suivi en temps réel des cycles RDE
-          </li>
-          <li>
-            <strong>Observation Internship</strong><br/>
-            OCP Group · 1 month<br/>
-            Learned about integration of embedded technologies in industrial automation systems and safety protocols used in large-scale operations
-          </li>
+          <li><strong>Langages :</strong> C, C++, Assembleur</li>
+          <li><strong>Cartes :</strong> STM32, Arduino, ESP32, FPGA</li>
+          <li><strong>Outils :</strong> STM32CubeIDE, Simulink, GitHub</li>
+          <li><strong>Protocoles :</strong> UART, I2C, SPI, CAN</li>
         </ul>
       </section>
     </main>
