@@ -83,35 +83,24 @@ aside:hover {
   letter-spacing: 0.5px;
 }
 
-/* ============================
-   IMPORTANT: remove blue bullets
-   ============================ */
-/* Force remove markers and pseudo-elements inside the sidebar */
-aside .sidebar-section ul,
-aside .sidebar-section ul li {
-  list-style: none !important;
-  margin: 0;
-  padding-left: 0 !important;
+/* Liste de la sidebar avec puces blanches */
+aside .sidebar-section ul {
+  list-style: disc !important;
+  padding-left: 1.2rem;
+  color: #ffffff;
 }
 
-/* Remove any pseudo-element or marker that could add a bullet */
-aside .sidebar-section li::before,
-aside .sidebar-section li::marker {
-  content: none !important;
-  display: none !important;
-}
-
-/* Make sure li text is properly aligned (no extra left padding) */
 aside .sidebar-section li {
+  color: #ffffff;
   font-size: 0.88rem;
   margin-bottom: 0.5rem;
-  padding-left: 0;
-  position: relative;
 }
 
-/* ============================
-   Main styles (keep bullets)
-   ============================ */
+aside .sidebar-section li::marker {
+  color: #ffffff;
+}
+
+/* Main content */
 main {
   flex: 3 1 700px;
   background-color: #ffffff;
@@ -146,7 +135,6 @@ main h2 {
   font-family: 'Roboto Slab', serif;
 }
 
-/* keep normal (disc) bullets in main */
 main ul {
   list-style: disc;
   padding-left: 2rem;
